@@ -14,6 +14,7 @@
     "@mantine/hooks": "^8.3.13",
     "@tanstack/react-router": "^1.157.16",
     "@tanstack/react-router-devtools": "^1.157.16",
+    "axios": "^1.13.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
