@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { type Category } from '../../api/apiTypes';
 
 export const Categories = () => {
   const [data, setData] = useState([]);
@@ -9,7 +10,7 @@ export const Categories = () => {
   useEffect(() => {
     // Fetch data
     axios
-      .get('http://localhost:5261/api/categories')
+      .get('https://localhost:7210/api/categories')
       .then((res) => {
         setData(res.data);
         setLoading(false);
@@ -25,7 +26,7 @@ export const Categories = () => {
 
   return (
     <div>
-      {data.map((category: any) => (
+      {data.map((category: Category) => (
         <p key={category.id}>{category.name}</p>
       ))}
     </div>
