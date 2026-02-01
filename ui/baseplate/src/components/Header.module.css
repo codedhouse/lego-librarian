@@ -1,0 +1,32 @@
+.appHeader {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: #ffdb33;
+  padding: 1.75vw;
+  font-family: 'Tomorrow';
+}
+
+.appTitle {
+  font-family: 'Black Ops One';
+  font-weight: 400;
+  font-size: 3vw;
+}
+
+.headerNav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.headerNavItem {
+  display: inline;
+}
+
+.headerNavLink {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 0.65vw;
+}

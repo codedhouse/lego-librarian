@@ -1,13 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/')({
-  component: Index,
+  component: IndexComponent,
 });
 
-function Index() {
-  return (
-    <div>
-      <h3>Welcome Home!</h3>
-    </div>
-  );
+function IndexComponent() {
+  return <div>You are Home</div>;
 }
