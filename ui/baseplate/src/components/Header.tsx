@@ -13,7 +13,7 @@ export const Header = () => {
       <nav>
         <ul className={styles.headerNav}>
           {navItems.map((item) => (
-            <li className={styles.headerNavItem}>
+            <li key={item.label} className={styles.headerNavItem}>
               <Link to={item.href} className={styles.headerNavLink}>
                 {item.label}
               </Link>
